@@ -194,7 +194,7 @@ function leaveRoom(){
         socket.emit('closeRoom', room.owner);
     }
     else{
-        socket.emit('leaveRoom', user.name);
+        socket.emit('leaveRoom', user.name, room.owner);
     }
 }
 
